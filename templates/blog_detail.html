@@ -1,0 +1,127 @@
+{% extends 'base.html' %} {% load static %} {% block title %} Dağ İnşaat |
+{{blog.title | truncatewords:7}} {% endblock%} {% block content %}
+
+<main id="main">
+  <!-- ======= Breadcrumbs ======= -->
+  <div
+    class="breadcrumbs d-flex align-items-center"
+    style="background-image: url('/static/img/breadcrumbs-bg.jpg')"
+  >
+    <div
+      class="container position-relative d-flex flex-column align-items-center"
+      data-aos="fade"
+    >
+      <h2>Yazının Devamı</h2>
+      <ol>
+        <li><a href="/">Ana Sayfa</a></li>
+        <li>Yazının Devamı</li>
+      </ol>
+    </div>
+  </div>
+  <!-- End Breadcrumbs -->
+
+  <!-- ======= Blog Details Section ======= -->
+  <section id="blog" class="blog">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row g-5">
+        <div class="col-lg-12">
+          <article class="blog-details">
+            <div class="post-img">
+              <img
+                src="{{ blog.title_image.url }}"
+                alt="{{ blog.title }}"
+                class="img-fluid center-img"
+              />
+            </div>
+
+            <h2 class="title">{{ blog.title }}</h2>
+
+            <div class="meta-top">
+              <ul>
+                <li class="d-flex align-items-center">
+                  <i class="bi bi-person"></i>
+                  <a href="#">{{ blog.author }}</a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="bi bi-clock"></i>
+                  <a href="#"
+                    ><time datetime="2020-01-01"
+                      >{{ blog.published_date }}</time
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- End meta top -->
+
+            <div class="content">
+              <p>{{ blog.first_place | safe}}</p>
+
+              <blockquote class="my-4">
+                <p>{{blog.quote}}</p>
+              </blockquote>
+
+              <p>
+               {{ blog.second_place | safe }}
+              </p>
+
+              <img
+                src="{{ blog.sub_image.url }}"
+                class="img-fluid my-5 center-img"
+                alt="{{ blog.title }}"
+              />
+              <p>
+                {{ blog.finished_place | safe }}
+              </p>
+            </div>
+            <!-- End post content -->
+
+            <div class="meta-bottom">
+              <i class="bi bi-folder"></i>
+              <ul class="cats">
+                <li><a href="#">{{blog.category}}</a></li>
+              </ul>
+
+              <i class="bi bi-person"></i>
+              <ul class="tags">
+                <li><a href="#">{{ blog.author }}</a></li>
+              </ul>
+            </div>
+            <!-- End meta bottom -->
+          </article>
+          <!-- End blog post -->
+
+          <div class="post-author d-flex align-items-center">
+            <img
+              src="assets/img/blog/blog-author.jpg"
+              class="rounded-circle flex-shrink-0"
+              alt=""
+            />
+            <div>
+              <h4>{{ blog.author }}</h4>
+              <div class="social-links">
+                <a href="https://twitters.com/#"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a href="https://facebook.com/#"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a href="https://instagram.com/#"
+                  ><i class="biu bi-instagram"></i
+                ></a>
+              </div>
+              <p>
+                Bu yazımızın sonuna geldik. Bir sonraki yazıda farklı ve ilginç konularla yine birlikte olacağız. Görüşmek üzere!
+              </p>
+            </div>
+          </div>
+          <!-- End post author -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Blog Details Section -->
+</main>
+<!-- End #main -->
+
+{% endblock %}

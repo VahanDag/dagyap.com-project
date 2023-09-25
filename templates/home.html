@@ -1,0 +1,404 @@
+{% extends 'base.html' %} {% load static %}
+
+{% block title %} Dağ İnşaat | Hayata Değer Katan Yapılar {% endblock%}
+
+{% block content %}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero">
+  <div class="info d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2 data-aos="fade-down">DAĞ İNŞAAT <span>GAYRİMENKUL</span></h2>
+          <p data-aos="fade-up">
+            "Kalite ve güvenle hayatınızı dönüştürüyor, sürdürülebilir gelecek
+            için inovatif çözümler sunuyoruz. Siz hayal edin, biz
+            gerçekleştirelim."
+          </p>
+          <a
+            data-aos="fade-up"
+            data-aos-delay="200"
+            href="{% url 'contact' %}"
+            class="btn-get-started"
+            >İELİTİŞİM</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="hero-carousel"
+    class="carousel slide"
+    data-bs-ride="carousel"
+    data-bs-interval="5000"
+  >
+    <div
+      class="carousel-item active"
+      style="
+        background-image: url(static/img/hero-carousel/hero-carousel-1.jpg);
+      "
+    ></div>
+    <div
+      class="carousel-item"
+      style="
+        background-image: url(static/img/hero-carousel/hero-carousel-2.jpg);
+      "
+    ></div>
+    <div
+      class="carousel-item"
+      style="
+        background-image: url(static/img/hero-carousel/hero-carousel-3.jpg);
+      "
+    ></div>
+    <div
+      class="carousel-item"
+      style="
+        background-image: url(static/img/hero-carousel/hero-carousel-4.jpg);
+      "
+    ></div>
+    <div
+      class="carousel-item"
+      style="
+        background-image: url(static/img/hero-carousel/hero-carousel-5.jpg);
+      "
+    ></div>
+
+    <a
+      class="carousel-control-prev"
+      href="#hero-carousel"
+      role="button"
+      data-bs-slide="prev"
+    >
+      <span
+        class="carousel-control-prev-icon bi bi-chevron-left"
+        aria-hidden="true"
+      ></span>
+    </a>
+
+    <a
+      class="carousel-control-next"
+      href="#hero-carousel"
+      role="button"
+      data-bs-slide="next"
+    >
+      <span
+        class="carousel-control-next-icon bi bi-chevron-right"
+        aria-hidden="true"
+      ></span>
+    </a>
+  </div>
+</section>
+<!-- End Hero Section -->
+
+<main id="main">
+  <!-- about us -->
+  <div id="about-us" class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{% static 'img/page/biz-kimiz.png' %}" alt="" />
+      </div>
+      <div class="col-md-6 about-us-title">
+        <div class="ot-heading is-dots mb-4">
+          <span>[ DAĞ İNŞAAT ]</span>
+          <h2 class="main-heading">Hayata Değer Katan Yapılar</h2>
+        </div>
+        <div>
+          <p>
+            DAĞ İnşaat olarak, sektörde edindiğimiz 35 yılı aşkın tecrübe ile,
+            piyasa gerçeklerine uygun fiyat politikamız sayesinde, lüks ve
+            konfor arayışında olan değerli müşterilerimize, keyifli yaşam
+            alanları sunuyoruz. En büyük birikimimiz müşterilerimiz! mottosu
+            ile, kendimizi yeniliklere adapte ederek, müşterilerimize sunduğumuz
+            inovatif yaklaşımımız ile her geçen gün sektörde daha ilerisini
+            planlayarak yolumuza güvenle ve sağlam adımlarla devam ediyoruz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ICONBOX -->
+  <div class="row-iconbox my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div
+            class="themesflat-spacer clearfix"
+            data-desktop="60"
+            data-mobile="60"
+            data-smobile="60"
+          ></div>
+          <div
+            class="themesflat-headings style-1 text-center clearfix section-header"
+          >
+            <h2 class="heading">EN İYİ TERCİH</h2>
+            <p>
+              35 yıllık deneyimimiz ve 30'u aşkın başarıyla tamamlanmış
+              projemizle, hayatınıza değer katıyor, güven ve kalite sunuyoruz.
+            </p>
+          </div>
+          <div
+            class="themesflat-spacer clearfix"
+            data-desktop="42"
+            data-mobile="35"
+            data-smobile="35"
+          ></div>
+        </div>
+        <!-- /.col-md-12 -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-md-4">
+          <div
+            class="themesflat-content-box clearfix"
+            data-margin="0 5px 0 5px"
+            data-mobilemargin="0 0 0 0"
+          >
+            <div
+              class="themesflat-icon-box icon-top align-center has-width w95 circle light-bg accent-color style-1 clearfix"
+            >
+              <div class="icon-wrap">
+                <i class="autora-icon-quality"></i>
+              </div>
+              <div class="text-wrap">
+                <h5 class="heading"><a href="#">KALİTE</a></h5>
+                <div class="sep clearfix"></div>
+                <p class="sub-heading">
+                  DAĞ İnşaat Hizmetleri, güvenlik kültürümüzden ödün vermeden en
+                  yüksek kalite standartlarını karşılamaya kararlıdır.
+                </p>
+              </div>
+            </div>
+            <!-- /.themesflat-icon-box -->
+          </div>
+          <!-- /.themesflat-content-box -->
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4">
+          <div
+            class="themesflat-spacer clearfix"
+            data-desktop="0"
+            data-mobile="0"
+            data-smobile="35"
+          ></div>
+          <div
+            class="themesflat-content-box clearfix"
+            data-margin="0 5px 0 5px"
+            data-mobilemargin="0 0 0 0"
+          >
+            <div
+              class="themesflat-icon-box icon-top align-center has-width w95 circle light-bg accent-color style-1 clearfix"
+            >
+              <div class="icon-wrap">
+                <i class="autora-icon-time"></i>
+              </div>
+              <div class="text-wrap">
+                <h5 class="heading"><a href="#">ZAMAN</a></h5>
+                <div class="sep clearfix"></div>
+                <p class="sub-heading">
+                  Şirketimizde müşterinin zamanına ve programına saygı duyuyoruz
+                  ve projeleri her zaman zamanında ve modaya uygun şekilde
+                  tamamlıyoruz.
+                </p>
+              </div>
+            </div>
+            <!-- /.themesflat-icon-box -->
+          </div>
+          <!-- /.themesflat-content-box -->
+        </div>
+        <!-- /.col-md-4 -->
+        <div class="col-md-4">
+          <div
+            class="themesflat-spacer clearfix"
+            data-desktop="0"
+            data-mobile="0"
+            data-smobile="35"
+          ></div>
+          <div
+            class="themesflat-content-box clearfix"
+            data-margin="0 5px 0 5px"
+            data-mobilemargin="0 0 0 0"
+          >
+            <div
+              class="themesflat-icon-box icon-top align-center has-width w95 circle light-bg accent-color style-1 clearfix"
+            >
+              <div class="icon-wrap">
+                <i class="autora-icon-author"></i>
+              </div>
+              <div class="text-wrap">
+                <h5 class="heading"><a href="#">TECRÜBE</a></h5>
+                <div class="sep clearfix"></div>
+                <p class="sub-heading">
+                  Söylendiği gibi pratik mükemmelleştirir. Yılların
+                  tecrübesiyle, işin tam olarak sizin spesifikasyonlarınıza göre
+                  yapılması konusunda bize güvenebilirsiniz.
+                </p>
+              </div>
+            </div>
+            <!-- /.themesflat-icon-box -->
+          </div>
+          <!-- /.themesflat-content-box -->
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <div
+            class="themesflat-spacer clearfix"
+            data-desktop="41"
+            data-mobile="35"
+            data-smobile="35"
+          ></div>
+          <div class="elm-button text-center">
+            <a href="{% url 'about-us' %}" class="themesflat-button bg-accent">HAKKIMIZDA</a>
+          </div>
+          <div
+            class="themesflat-spacer clearfix"
+            data-desktop="73"
+            data-mobile="60"
+            data-smobile="60"
+          ></div>
+        </div>
+        <!-- /.col-md-12 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- END ICONBOX -->
+
+  <!-- ======= Our Projects Section ======= -->
+  <section id="projects" class="projects">
+    <div class="container" data-aos="fade-up">
+      <div class="section-header">
+        <h2>ESERLERİMİZ</h2>
+        <p>
+          Dayanıklılığı estetikle buluşturan projelerimiz, sizin için sadece bir
+          yapı değil, aynı zamanda bir yaşam alanı oluşturur.
+        </p>
+      </div>
+
+      <div
+        class="portfolio-isotope"
+        data-portfolio-filter="*"
+        data-portfolio-layout="masonry"
+        data-portfolio-sort="original-order"
+      >
+        <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">Hepsi</li>
+          <li data-filter=".filter-kartal">Kartal</li>
+          <li data-filter=".filter-maltepe">Maltepe</li>
+          <li data-filter=".filter-pendik">Pendik</li>
+          <!-- <li data-filter=".filter-design">Design</li> -->
+        </ul>
+        <!-- End Projects Filters -->
+
+        <div
+          class="row gy-4 portfolio-container"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div
+            class="row gy-4 portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            {% for project in projects %}
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-{{ project.city_name.city|lower }}"
+            >
+              <div class="portfolio-content h-100">
+                <img
+                  src="{{ project.images.first.image.url }}"
+                  class="img-fluid"
+                  alt="{{project.title}}"
+                />
+
+                <div class="portfolio-info">
+                  <h4>{{project.city_name.city }}</h4>
+                  <p>{{ project.title }}</p>
+                  {% for image in project.images.all %}
+                  <a
+                    href="{{ image.image.url }}"
+                    title="{{ project.title }}"
+                    data-gallery="portfolio-gallery-{{ project.title|slugify }}"
+                    class="glightbox preview-link"
+                  >
+                    <i class="bi bi-zoom-in"></i>
+                  </a>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <!-- End Projects Container -->
+      </div>
+    </div>
+  </section>
+  <!-- End Our Projects Section -->
+
+  <!-- ======= Recent Blog Posts Section ======= -->
+  <section id="recent-blog-posts" class="recent-blog-posts">
+    <div class="container" data-aos="fade-up"">
+
+    <div class="section-header">
+      <h2>En Son Yazılar</h2>
+      <p>
+        İnşaat ve gayrimenkul gibi alanlarda fikir sahibi olabileceğiniz blog
+        yazılarımızı okuyabilirsiniz.
+      </p>
+    </div>
+
+    <div class="row gy-5">
+      {% for post in latest_blog %}
+      <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="post-item position-relative h-100">
+          <div class="post-img position-relative overflow-hidden">
+            <img
+              src="{{ post.title_image.url }}"
+              class="img-fluid"
+              alt="{{ post.title }}"
+            />
+            <span class="post-date">{{ post.published_date }}</span>
+          </div>
+
+          <div class="post-content d-flex flex-column">
+            <h3 class="post-title">
+              {{ post.title }}
+            </h3>
+
+            <div class="meta d-flex align-items-center">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-person"></i>
+                <span class="ps-2">{{ post.author }}</span>
+              </div>
+              <span class="px-3 text-black-50">/</span>
+              <div class="d-flex align-items-center">
+                <i class="bi bi-folder2"></i> <span class="ps-2">{{ post.category }}</span>
+              </div>
+            </div>
+
+            <hr />
+
+            <a href="{% url 'blog-detail' post.slug %}" class="readmore stretched-link"
+              ><span>Devamını Oku</span><i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+      <!-- End post item -->
+    </div>
+  </section>
+  <!-- End Recent Blog Posts Section -->
+</main>
+<!-- End #main -->
+
+{% endblock %}

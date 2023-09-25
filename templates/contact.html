@@ -1,0 +1,96 @@
+{% extends 'base.html' %} {% load static %}
+
+{% block title %} Dağ İnşaat | İletişim {% endblock%}
+
+
+{% block content %}
+
+<main id="main">
+  <!-- ======= Breadcrumbs ======= -->
+  <div
+    class="breadcrumbs d-flex align-items-center"
+    style="background-image: url('static/img/breadcrumbs-bg.jpg')"
+  >
+    <div
+      class="container position-relative d-flex flex-column align-items-center"
+      data-aos="fade"
+    >
+      <h2>İletişim</h2>
+      <ol>
+        <li><a href="/">Ana Sayfa</a></li>
+        <li>İletişim</li>
+      </ol>
+    </div>
+  </div>
+  <!-- End Breadcrumbs -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+        <div class="col-lg-6">
+          <div
+            class="info-item d-flex flex-column justify-content-center align-items-center"
+          >
+            <i class="bi bi-map"></i>
+            <h3>Bize Ulaşın</h3>
+            <p class="text-center">
+              Her türlü soru, öneri veya ihtiyacınız için, lütfen bize
+              çekinmeden ulaşın
+            </p>
+          </div>
+        </div>
+        <!-- End Info Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div
+            class="info-item d-flex flex-column justify-content-center align-items-center"
+          >
+            <i class="bi bi-envelope"></i>
+            <h3>Email Adresimiz</h3>
+            <strong>Zülfikar DAĞ</strong>
+            <p>zdag65@gmail.com</p>
+          </div>
+        </div>
+        <!-- End Info Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div
+            class="info-item d-flex flex-column justify-content-center align-items-center"
+          >
+            <i class="bi bi-telephone"></i>
+            <h3>Telefon</h3>
+            <strong>Zülfikar DAĞ</strong>
+            <p>+90 532 781 1150</p>
+          </div>
+        </div>
+        <!-- End Info Item -->
+      </div>
+
+      <div class="row gy-4 mt-1 maps-logo">
+        <div class="col-lg-6 d-flex justify-content-center align-items-center">
+          <img src="{% static 'img/logo.png' %}" alt="" />
+        </div>
+
+        <div class="col-lg-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d192875.1266068965!2d29.196154147211058!3d40.94481466736538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cad70fd26705e3%3A0xcbd4c281a7b18cea!2sPendik%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1695499297206!5m2!1sen!2str"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <!-- End Google Maps -->
+
+        <!-- End Contact Form -->
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+</main>
+<!-- End #main -->
+
+{% endblock %}

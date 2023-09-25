@@ -1,0 +1,54 @@
+{% load static %}
+ <!-- ======= Footer ======= -->
+ <footer id="footer" class="footer">
+
+  <div class="footer-content position-relative">
+    <div class="container ">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6">
+          <div class="footer-info">
+            <img src="{% static 'img/logo.png' %}" class="mb-4" alt="">
+            <p>
+              <strong>Zülfikar Dağ</strong><br>
+              <strong>Telefon:</strong> +90 532 781 1150<br>
+              <strong>Email:</strong> zdag65@gmail.com<br>
+            </p>
+            <div class="social-links d-flex mt-3">
+              <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/vahandag/" target="_blank" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div><!-- End footer info column-->
+
+        <div class="col-lg-2 col-md-2 footer-links">
+          <h4>Bağlantılar</h4>
+          <ul>
+            <li><a href="/">Ana Sayfa</a></li>
+            <li><a href="{% url 'about-us' %}">Hakkımızda</a></li>
+            <li><a href="{% url 'projects' %}">Eserlerimiz</a></li>
+            <li><a href="{% url 'contact' %}">İletişim</a></li>
+            <li><a href="{% url 'blogs' %}">Blog</a></li>
+          </ul>
+        </div><!-- End footer links column-->
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-legal text-center position-relative">
+    <div class="container">
+      <div class="copyright">
+        Copyright &copy; <script>document.write(new Date().getFullYear());</script> | Tüm Hakları Saklıdır
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.linkedin.com/in/vahandag/" target="_blank">Vahan Dag</a>
+      </div>
+    </div>
+  </div>
+
+</footer>
+<!-- End Footer -->
